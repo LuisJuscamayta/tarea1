@@ -1,0 +1,315 @@
+/* cuerpo*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+/*Header*/
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .brand:hover {
+    color: #09a6d4;
+}
+header .navigation {
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+    background: #09a6d4;
+}
+
+/*Carousel*/
+section {
+    padding: 100px 200px;
+}
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .content {
+    z-index: 888;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    display: none;
+    text-align: center;
+}
+.home .content.active {
+    display: block;
+}
+.home .content h1 {
+    font-size: 4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+.home img {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont {
+    background-color: #00000099;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.cont a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+.cont a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+.cont a:hover:before{
+    width: 100%;
+    background: #09a6d4;
+}
+
+
+/*PDF*/
+.item {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+iframe {
+    margin-top: 20px;
+}
+
+
+/*pie de pagina*/
+footer{
+    width: 100%;
+    background-color: #041562;
+}
+footer .grupo-1{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .grupo-1 .box figure img{
+    width: 350px;
+}
+footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding: 5px 0 0 100px;
+}
+footer .grupo-1 .box a{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+footer .grupo-1 .box ul{
+    list-style-type: none;
+    padding: 5px 0 0 125px;
+}
+footer .grupo-1 .box a:hover{
+    color: #09a6d4;
+}
+footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 25px;
+    background-color: hsl(230, 89%, 11%);
+    text-align: center;
+    transition: all 300ms ease;
+}
+footer .grupo-1 .red-social a:hover{
+    color: #09a6d4;
+}
+footer .grupo-2{
+    background-color: hsl(230, 89%, 11%);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*Boton*/
+html {
+    scroll-behavior: smooth;
+}
+.btn-scrolltop {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 15px 20px;
+    background: #F0DE36;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+.btn-scrolltop-on {
+    transform: translateY(0);
+}
+.btn-scrolltop:hover {
+    background: #f00;
+    color: #fff;
+}
+@media (max-width: 1040px) {
+    header{
+        padding: 12px 20px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    header  .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(1, 1, 1, 0.5);
+    }
+    header .navigation .navigation-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .navigation .navigation-items a:before {
+        background: #222;
+        height: 5px;
+    }
+    header .navigation .navigation-items {
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1, 1, 1 / 20%);
+    }
+    .menu-btn {
+        background: url(/assets/img/menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+}
+@media (max-width: 560px){
+    .home .content h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+}

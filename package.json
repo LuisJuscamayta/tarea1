@@ -1,0 +1,17 @@
+{
+  "name": "as231s2_t13",
+  "version": "1.0.0",
+  "description": "IEP GERARDO SALOMÓN MEJIA SACO (Aldair CHAVEZ | Carlos GUERRERO | Alejandra JARA)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}

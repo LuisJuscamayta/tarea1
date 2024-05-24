@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDARIO</title>
+    <link rel="icon" href="/img/insignia.png">
+    <link rel="stylesheet" href="/css/calendars.css">
+    <script src="https://kit.fontawesome.com/28619d3115.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="/img/insignia.png" width="50px" height="50px">
+        <div class="menu-btn">
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/html/reseña.html">Quienes Somos</a>
+                    <a href="/html/reglamento.html">Documentos</a>
+                    <a href="/html/docentes.html">Plana Docente</a>
+                    <a href="#">Calendario</a>
+                    <a href="/html/horario.html">Horarios</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <img class="img-slide active" src="/img/fondo(2).jpeg">
+        <div class="content active">
+            <h1>CALENDARIO ESCOLAR</h1>
+        </div>
+        <div class="cont">  
+            <div><a href="#"></a></div>
+            <div><a href="#"></a></div>
+            <div><a href="#"></a></div>   
+        </div>
+    </section>
+    <main>
+        <div id="calendar">
+            <div class="cal-container">
+                <div class="left">
+                    <div class="calendar">
+                        <div class="month">
+                            <i class="fas fa-angle-left prev"></i>
+                            <div class="date">Diciembre 2015</div>
+                            <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>Domingo</div>
+                            <div>lunes</div>
+                            <div>Martes</div>
+                            <div>Miercoles</div>
+                            <div>Jueves</div>
+                            <div>Viernes</div>
+                            <div>Sabado</div>
+                        </div>
+                        <div class="days"></div>
+                        <div class="goto-today">
+                            <div class="goto">
+                                <input type="text" placeholder="mm/yyyy" class="date-input" />
+                                <button class="goto-btn">Ir</button>
+                            </div>
+                            <button class="today-btn">Dia</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="today-date">
+                        <div class="event-day">wed</div>
+                        <div class="event-date">12 diciembre 2022</div>
+                    </div>
+                    <div class="events"></div>
+                        <!--<div class="add-event-wrapper">
+                                <div class="add-event-header">
+                                <div class="title">Agregar Evento</div>
+                                <i class="fas fa-times close"></i>
+                                </div>
+                            <div class="add-event-body">
+                                <div class="add-event-input">
+                                    <input type="text" placeholder="Nombre del evento" class="event-name" />
+                                </div>
+                                <div class="add-event-input">
+                                    <input
+                                    type="text"
+                                    placeholder="Hora del evento desde"
+                                    class="event-time-from"
+                                    />
+                                </div>
+                                <div class="add-event-input">
+                                    <input
+                                    type="text"
+                                    placeholder="Hora del evento hasta"
+                                    class="event-time-to"
+                                    />
+                                </div>
+                            </div>
+                                <div class="add-event-footer">
+                                <button class="add-event-btn">Añadir evento</button>
+                            </div>
+                        </div>-->
+                </div>
+                <button class="add-event">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/img/Logo.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>ENLACES</h2>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="/html/reseña.html">Quienes Somos</a></li>
+                    <li><a href="/html/reglamento.html">Documentos</a></li>
+                    <li><a href="/html/docentes.html">Plana Docente</a></li>
+                    <li><a href="/html/calendario.html">Calendario</a></li>
+                    <li><a href="/html/horario.html">Horarios</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/p/IE-3084-Enrique-Guzm%C3%A1n-y-Valle-100038170526110/" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>I.E.P Guzman y Valle 3084</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <button class="btn-scrolltop" id="btn_scrolltop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/calendars.js"></script>
+    <script src="/js/bottom.js"></script>
+
+</body>
+</html>
